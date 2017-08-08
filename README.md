@@ -2,6 +2,8 @@
 
 A tiny jQuery plugin that could control the button's state
 
+It is a very simple jquery plugin that disables button when some input filed is empty.
+
 ## Usage
 
 ### Download
@@ -22,3 +24,4 @@ Load the script file: `snbutton.js` in your application:
 ```js
 SNButton.init("someword");
 ```
+

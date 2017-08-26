@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>more fields</title>
+	</head>
+
+	<body>
+
+	<div style="margin:40px;">
+		<h4>Disabled button when input filed is empty</h4>
+		<input id="some1" placeholder="input something" />
+		<input id="some2" placeholder="input something" />
+		<input id="some3" placeholder="input something" />
+		<button id="snbtn">SUBMIT</button>
+		<hr size="1" />
+	</div>
+
+	</body>
+
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../js/snbutton.js"></script>
+
+	<script>
+	$().ready(function() {
+
+		SNButton.init("snbtn", {
+			fields: ["some1", "some2", "some3"]
+				});
+	});
+	</script>
+</html>
